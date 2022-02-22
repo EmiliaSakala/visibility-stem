@@ -1,0 +1,842 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: "rubik";
+  font-style: normal;
+  src: url("./rubik/Rubik-VariableFont_wght.ttf"), url("./rubik/Rubik-VariableFont_wght.ttf");
+}
+
+body {
+  font-family: rubik;
+  overflow-x: hidden;
+}
+
+.banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.banner .heading {
+  margin: 244px 0 0 150px;
+}
+
+.banner .heading h1 {
+  font-size: 48px;
+  color: #3B4C99;
+}
+
+.banner .heading p {
+  font-size: 18px;
+}
+
+.banner .rectangle {
+  width: 500px;
+  height: 600px;
+}
+
+.image {
+  position: absolute;
+  width: 24vw;
+  top: 215px;
+  left: 750px;
+}
+
+.stem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.stem .stem-inner {
+  margin: 50px 0 0 120px;
+}
+
+.stem .stem-inner h2 {
+  font-size: 48px;
+  color: #3B4C99;
+  margin-bottom: 10px;
+}
+
+.stem .stem-inner p {
+  font-size: 18px;
+}
+
+.stem .oval {
+  width: 22vw;
+}
+
+.Standing {
+  width: 15vw;
+  position: absolute;
+  top: 100%;
+  left: 4%;
+}
+
+.team {
+  background-image: url(img/Rectangle2.png);
+  height: 270vh;
+  background-size: cover;
+  padding-top: 17%;
+}
+
+.team h2 {
+  text-align: center;
+  color: #3b4c99;
+  font-size: 40px;
+}
+
+.team h4 {
+  font-size: 25px;
+  color: #3b4c99;
+  margin: 20px 0px 20px 10%;
+}
+
+.team .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-bottom: 40px;
+}
+
+.team .cards .card-body {
+  position: relative;
+  background-color: white;
+}
+
+.team .cards .card-body .card {
+  width: 34vw;
+}
+
+.team .cards .card-body .copy {
+  width: 15vw;
+  position: absolute;
+  left: 28%;
+  top: 9.5%;
+}
+
+.team .cards .card-body .copyy {
+  width: 11vw;
+  position: absolute;
+  left: 32%;
+  top: 9.6%;
+}
+
+.team .cards .card-body h5 {
+  font-size: 24px;
+  color: #75a1de;
+  margin-bottom: 20px;
+}
+
+.team .cards .card-body .card-text {
+  padding: 20px 0px 20px 33px;
+}
+
+.team .cards .card-body .icons-img {
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.team .cards .card-body .icons-img img {
+  width: 2vw;
+  margin-left: 10px;
+}
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-top: 10%;
+}
+
+.contact h2 {
+  font-size: 30px;
+  color: #75a1de;
+  margin-bottom: 10px;
+}
+
+.contact p {
+  margin-bottom: 10px;
+}
+
+.contact img {
+  width: 20vw;
+}
+
+.contact .contacts-inner {
+  text-align: center;
+}
+
+.contact .contacts-inner h5 {
+  margin: 10px 0px;
+  font-size: 20px;
+  color: #191847;
+}
+
+.contact .contacts-inner p {
+  color: #191847;
+}
+
+.contact form {
+  -webkit-box-shadow: 0px 2px 14px #0000002a;
+          box-shadow: 0px 2px 14px #0000002a;
+  padding: 15px 15px;
+}
+
+.contact form .first-inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact form .first-inputs .inner-form {
+  margin: 0px 10px 10px 0px;
+}
+
+.contact form .first-inputs .inner-form input {
+  padding: 5px;
+  border: 1px solid #979797;
+  padding-right: 30px;
+}
+
+.contact form .first-inputs .inner-form input:hover {
+  outline: 0px solid #979797;
+}
+
+.contact form textarea {
+  border: 1px solid #979797;
+}
+
+.contact form textarea:hover {
+  outline: 0px solid #979797;
+}
+
+.contact form button {
+  margin-top: 10px;
+  background-color: #4157af;
+  padding: 12px;
+  border: 1px solid #4157af;
+  border-radius: 5px;
+  color: white;
+  margin-left: 80%;
+}
+
+.contact form button:hover {
+  background-color: #0c3af1fd;
+  cursor: pointer;
+}
+
+.footer {
+  padding: 100px 0px;
+  text-align: center;
+}
+
+.footer .icons-img {
+  margin-bottom: 10px;
+}
+
+.footer .icons-img img {
+  width: 2vw;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 575px) {
+  .banner {
+    padding-top: 97px;
+  }
+  .banner .heading {
+    margin: 20px 0 0 6px;
+  }
+  .banner .heading h1 {
+    font-size: 18px;
+  }
+  .banner .heading p {
+    font-size: 8px;
+    line-height: 1.6;
+  }
+  .banner .rectangle {
+    width: 163px;
+    height: 183px;
+  }
+  .image {
+    top: 167px;
+    left: 50%;
+  }
+  .stem .stem-inner {
+    margin: 50px 0 0 45px;
+  }
+  .stem .stem-inner h2 {
+    font-size: 18px;
+  }
+  .stem .stem-inner p {
+    font-size: 7px;
+    line-height: 1.6;
+  }
+  .stem .oval {
+    width: 30vw;
+    height: 39vh;
+    margin-top: 11%;
+  }
+  .Standing {
+    top: 73%;
+    width: 31vw;
+  }
+  .team {
+    padding-top: 60%;
+    height: auto;
+    margin-top: -37%;
+  }
+  .team h2 {
+    font-size: 18px;
+  }
+  .team h4 {
+    font-size: 15px;
+    margin: 20px 0px 20px 0px;
+    text-align: center;
+  }
+  .team .cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .team .cards .card-body {
+    margin-bottom: 20px;
+  }
+  .team .cards .card-body .card {
+    width: 100vw;
+  }
+  .team .cards .card-body .copy {
+    width: 37vw;
+    top: 13%;
+  }
+  .team .cards .card-body .copyy {
+    width: 32vw;
+    top: 8.8%;
+  }
+  .team .cards .card-body h5 {
+    font-size: 18px;
+  }
+  .team .cards .card-body p {
+    font-size: 13px;
+    line-height: 1.6;
+  }
+  .team .cards .card-body .icons-img {
+    text-align: center;
+    margin-top: 15px;
+  }
+  .team .cards .card-body .icons-img img {
+    width: 5vw;
+    margin-left: 10px;
+  }
+  .contact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 10%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .contact h2 {
+    font-size: 18px;
+    color: #75a1de;
+  }
+  .contact p {
+    font-size: 12px;
+    line-height: 1.6;
+  }
+  .contact img {
+    width: 100%;
+  }
+  .contact .contacts-inner {
+    text-align: center;
+  }
+  .contact .contacts-inner h5 {
+    font-size: 20px;
+  }
+  .contact form {
+    margin-bottom: 44px;
+  }
+  .contact form .first-inputs .inner-form input {
+    padding: 1px;
+    width: 100%;
+  }
+  .contact form textarea {
+    width: 97%;
+  }
+  .contact form button {
+    padding: 7px;
+    margin-left: 75%;
+  }
+  .footer .icons-img img {
+    width: 6vw;
+  }
+}
+
+@media (width: 414px) {
+  .team .cards .card-body .copy {
+    top: 14.4%;
+  }
+  .team .cards .card-body .copyy {
+    top: 9.3%;
+  }
+  .team .cards .card-body .card-text {
+    text-align: center;
+    padding: 20px 0 20px 1px;
+  }
+  .team .cards .card-body p {
+    font-size: 14px;
+    line-height: 1.3;
+  }
+  .image {
+    left: 55%;
+  }
+  .Standing {
+    top: 60%;
+  }
+}
+
+@media (width: 320px) {
+  .banner .heading p {
+    font-size: 7px;
+  }
+  .banner .rectangle {
+    width: 138px;
+    height: 198px;
+  }
+  .image {
+    left: 47%;
+    width: 38%;
+    top: 25%;
+  }
+  .stem .stem-inner p {
+    font-size: 7px;
+    margin-bottom: -11px;
+  }
+  .Standing {
+    top: 68%;
+  }
+  .team {
+    padding-top: 66%;
+    height: 420vh;
+  }
+  .team .cards .card-body .copy {
+    width: 38vw;
+    top: 12%;
+  }
+  .team .cards .card-body p {
+    font-size: 10px;
+  }
+  .team .cards .card-body h5 {
+    font-size: 16px;
+  }
+  .team .cards .card-body .copyy {
+    width: 32vw;
+    top: 8.8%;
+  }
+  .contact form {
+    font-size: 12px;
+  }
+  .contact form textarea {
+    width: 96%;
+  }
+  .contact form button {
+    margin-left: 70%;
+  }
+}
+
+@media (height: 812px) {
+  .stem .oval {
+    height: 22vh;
+  }
+  .Standing {
+    top: 52%;
+  }
+  .team {
+    padding-top: 65%;
+    height: 333vh;
+  }
+}
+
+@media (width: 360px) {
+  .Standing {
+    top: 66%;
+  }
+  .team {
+    padding-top: 66%;
+    height: 409vh;
+  }
+  .team .cards .card-body .copy {
+    width: 38vw;
+    top: 12.3%;
+  }
+  .team .cards .card-body p {
+    font-size: 12px;
+  }
+  .team .cards .card-body h5 {
+    font-size: 16px;
+  }
+  .team .cards .card-body .copyy {
+    width: 32vw;
+    top: 8.8%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .banner {
+    padding-top: 12%;
+  }
+  .banner .heading {
+    margin: 90px 0 0 24px;
+  }
+  .banner .heading h1 {
+    font-size: 35px;
+  }
+  .banner .heading p {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+  .banner .rectangle {
+    width: 353px;
+    height: 373px;
+  }
+  .image {
+    top: 215px;
+    left: 49%;
+  }
+  .stem .stem-inner h2 {
+    font-size: 35px;
+  }
+  .stem .stem-inner p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  .stem .oval {
+    width: 17vw;
+  }
+  .Standing {
+    top: 59%;
+  }
+  .team {
+    height: 140vh;
+    padding-top: 24%;
+  }
+  .team .cards .card-body .card {
+    width: 44vw;
+  }
+  .team .cards .card-body .copy {
+    top: 15%;
+  }
+  .team .cards .card-body .copyy {
+    top: 15%;
+  }
+  .team .cards .card-body p {
+    font-size: 11px;
+    line-height: 1.6;
+  }
+  .team .cards .card-body h5 {
+    font-size: 16px;
+  }
+  .contact img {
+    width: 100%;
+    margin-top: 100px;
+  }
+  .contact form .first-inputs .inner-form input {
+    padding: 2px;
+  }
+}
+
+@media (width: 1024px) {
+  p {
+    line-height: 1.6;
+  }
+  .banner {
+    padding-top: 9%;
+  }
+  .banner .heading {
+    margin: 113px 0 0 56px;
+  }
+  .banner .rectangle {
+    width: 454px;
+    height: 493px;
+  }
+  .image {
+    left: 525px;
+  }
+  .Standing {
+    top: 56%;
+  }
+  .team {
+    height: 134vh;
+    padding-top: 24%;
+  }
+  .team .cards .card-body .card {
+    width: 45vw;
+  }
+  .team .cards .card-body .copy {
+    width: 20vw;
+    top: 8.6%;
+  }
+  .team .cards .card-body .copyy {
+    top: 10%;
+    width: 14vw;
+  }
+  .contact img {
+    width: 100%;
+    margin-top: 70px;
+  }
+  .contact form button {
+    margin-left: 76%;
+  }
+  .contact form .first-inputs .inner-form input {
+    padding: 2px;
+  }
+}
+
+@media (min-width: 568px) and (max-width: 767px) {
+  p {
+    line-height: 1.6;
+  }
+  .banner {
+    padding-top: 9%;
+  }
+  .banner .heading {
+    margin: 90px 0 0 24px;
+  }
+  .banner .heading h1 {
+    font-size: 35px;
+  }
+  .banner .heading p {
+    font-size: 12px;
+  }
+  .banner .rectangle {
+    width: 298px;
+    height: 346px;
+  }
+  .image {
+    top: 215px;
+    left: 49%;
+  }
+  .stem .stem-inner h2 {
+    font-size: 35px;
+  }
+  .stem .stem-inner p {
+    font-size: 11px;
+  }
+  .stem .oval {
+    width: 17vw;
+    height: 62vh;
+    margin-top: 70px;
+  }
+  .Standing {
+    top: 145%;
+  }
+  .team {
+    height: 364vh;
+    padding-top: 24%;
+  }
+  .team .cards .card-body .card {
+    width: 46vw;
+  }
+  .team .cards .card-body .copy {
+    top: 15%;
+  }
+  .team .cards .card-body .copyy {
+    top: 15%;
+  }
+  .team .cards .card-body p {
+    font-size: 11px;
+  }
+  .team .cards .card-body h5 {
+    font-size: 16px;
+  }
+  .team .cards .card-body .card-text {
+    padding: 20px 0px 20px 6px;
+  }
+  .contact h2 {
+    font-size: 25px;
+  }
+  .contact p {
+    font-size: 12px;
+  }
+  .contact form .first-inputs .inner-form input {
+    padding: 2px;
+  }
+  .contact img {
+    width: 100%;
+    margin-top: 100px;
+  }
+}
+
+@media (width: 568px) {
+  .banner .heading h1 {
+    font-size: 24px;
+  }
+  .banner .heading p {
+    font-size: 11px;
+  }
+  .banner .rectangle {
+    width: 258px;
+    height: 310px;
+  }
+  .image {
+    top: 180px;
+    left: 49%;
+  }
+  .Standing {
+    top: 154%;
+  }
+  .team {
+    height: auto;
+    padding-top: 55%;
+    margin-top: -35%;
+  }
+  .team .cards .card-body .card {
+    width: 100vw;
+  }
+  .team .cards .card-body .copy {
+    top: 14.7%;
+  }
+  .team .cards .card-body .copyy {
+    top: 10%;
+  }
+  .team .cards .card-body p {
+    font-size: 18px;
+  }
+  .team .cards .card-body h5 {
+    font-size: 20px;
+  }
+  .team .cards .card-body .card-text {
+    padding: 20px 0px 20px 47px;
+  }
+  .contact h2 {
+    font-size: 25px;
+    text-align: center;
+  }
+  .contact p {
+    font-size: 12px;
+    text-align: center;
+  }
+  .contact form {
+    padding: 15px 86px;
+  }
+  .contact form .first-inputs .inner-form input {
+    padding: 2px;
+  }
+  .contact form textarea {
+    width: 97%;
+  }
+  .contact form button {
+    margin-left: 79%;
+  }
+  .contact img {
+    width: 100%;
+    margin-top: 100px;
+  }
+}
+
+@media (width: 736px) {
+  .image {
+    left: 53%;
+  }
+  .Standing {
+    top: 135%;
+  }
+  .team {
+    height: 352vh;
+  }
+  .team .cards .card-body .copy {
+    top: 14.2%;
+    width: 16vw;
+  }
+  .team .cards .card-body p {
+    font-size: 12px;
+  }
+  .team .cards .card-body .copyy {
+    top: 16%;
+  }
+}
+
+@media (width: 812px) {
+  .Standing {
+    top: 162%;
+  }
+  .team {
+    height: 390vh;
+  }
+  .team .cards .card-body .copy {
+    top: 15.4%;
+  }
+  .team .cards .card-body .copyy {
+    top: 15.5%;
+  }
+}
+
+@media (height: 768px) {
+  .Standing {
+    top: 100%;
+  }
+  .team {
+    height: 236vh;
+  }
+}
+
+@media (width: 1366px) and (height: 1024px) {
+  .Standing {
+    top: 73%;
+  }
+  .team {
+    height: 167vh;
+  }
+  .contact form textarea {
+    width: 97%;
+  }
+}
+
+@media (width: 1280px) and (height: 950px) {
+  .image {
+    left: 648px;
+  }
+  .Standing {
+    top: 78%;
+  }
+  .team {
+    height: 193vh;
+    padding-top: 17%;
+    margin-top: -6%;
+  }
+  .team .cards .card-body .card {
+    width: 41vw;
+  }
+  .team .cards .card-body .copy {
+    top: 15.5%;
+    left: 30%;
+  }
+  .team .cards .card-body .copyy {
+    top: 15.6%;
+  }
+  .team .cards .card-body p {
+    font-size: 18px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

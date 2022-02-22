@@ -1,0 +1,491 @@
+*{padding: 0; margin: 0; box-sizing: border-box;}
+
+html{
+    scroll-behavior: smooth;
+}
+
+@font-face{
+    font-family: "rubik";
+    font-style: normal;
+    src:url("./rubik/Rubik-VariableFont_wght.ttf"),
+    url("./rubik/Rubik-VariableFont_wght.ttf");
+}
+
+body{font-family: rubik; overflow-x: hidden;}
+
+.banner{
+    display: flex; justify-content: space-between;
+    .heading{margin: 244px 0 0 150px;
+        h1{font-size: 48px; color: #3B4C99;}
+        p{font-size: 18px;}
+    }
+    .rectangle{width: 500px; height: 600px;}
+}
+.image{position: absolute; width: 24vw; top: 215px; left: 750px;}
+
+.stem{
+    display: flex;
+    .stem-inner{
+        margin: 50px 0 0 120px;
+        h2{font-size: 48px; color: #3B4C99; margin-bottom: 10px;}
+        p{font-size: 18px;}
+    }
+    .oval{width: 22vw;}
+}
+.Standing{width: 15vw; position: absolute; top: 100%; left: 4%;}
+
+.team{
+    background-image: url(img/Rectangle2.png); height: 270vh; background-size: cover; padding-top: 17%;
+    h2{text-align: center; color: #3b4c99; font-size: 40px;}
+    h4{font-size: 25px; color: #3b4c99; margin: 20px 0px 20px 10%;}
+    .cards{
+        display: flex; justify-content: space-evenly; margin-bottom: 40px;
+        .card-body{
+            position: relative; background-color: white;
+            .card{width: 34vw;}
+            .copy{width: 15vw; position: absolute; left: 28%; top: 9.5%;}
+            .copyy{width: 11vw; position: absolute; left: 32%; top: 9.6%;}
+            h5{font-size: 24px; color: #75a1de; margin-bottom: 20px;}
+            .card-text{padding: 20px 0px 20px 33px;}
+            .icons-img {text-align: center; margin-top: 15px; margin-bottom: 20px;
+                img{width: 2vw; margin-left: 10px;}
+                }
+            }
+        }
+    }
+
+.contact{
+    display: flex; justify-content: space-around; padding-top: 10%;
+    h2{font-size: 30px; color: #75a1de; margin-bottom: 10px;}
+    p{margin-bottom: 10px;}
+    img{width: 20vw;}
+    .contacts-inner{text-align: center;
+        h5{margin: 10px 0px; font-size: 20px; color: #191847;}
+        p{color: #191847;}
+    }
+    form{ box-shadow: 0px 2px 14px #0000002a; padding: 15px 15px;
+        .first-inputs{
+            display: flex;
+            .inner-form{margin: 0px 10px 10px 0px;
+                input{padding: 5px; border: 1px solid #979797;padding-right: 30px;}  
+                input:hover{outline: 0px solid #979797;}
+            }
+        }
+        textarea{border: 1px solid #979797;}
+        textarea:hover{outline: 0px solid #979797;}
+        button{margin-top: 10px; background-color: #4157af; padding: 12px; border: 1px solid #4157af; border-radius: 5px; color: white; margin-left: 80%;}
+        button:hover{background-color: #0c3af1fd; cursor: pointer;}
+    }
+}
+
+.footer{
+    padding: 100px 0px; text-align: center;
+    .icons-img{
+        margin-bottom: 10px;
+        img{width: 2vw; margin-left: 10px; margin-bottom: 10px;}
+    }
+}
+
+// media quieries
+
+@media (max-width: 575px){
+
+    .banner{
+        padding-top: 97px;
+        .heading{margin: 20px 0 0 6px;
+            h1{font-size: 18px;}
+            p{font-size: 8px; line-height: 1.6}
+        }
+        .rectangle{width: 163px; height: 183px;}
+    }
+    .image{top: 167px; left: 50%;}
+
+    .stem{
+        .stem-inner{
+            margin: 50px 0 0 45px;
+            h2{font-size: 18px;}
+            p{font-size: 7px; line-height: 1.6}
+        }
+        .oval{width: 30vw; height: 39vh; margin-top: 11%;}
+    }
+    .Standing{top: 73%;width: 31vw;}
+   
+
+    .team{
+        padding-top: 60%; height: auto; margin-top: -37%;
+        h2{font-size: 18px;}
+        h4{font-size: 15px; margin: 20px 0px 20px 0px; text-align: center;}
+        .cards{
+            flex-direction: column;
+            .card-body{
+                 margin-bottom: 20px;
+                .card{width: 100vw;}
+                .copy{width: 37vw; top: 13%;}
+                .copyy{width: 32vw; top: 8.8%;}
+                h5{font-size: 18px;}
+                p{font-size: 13px; line-height: 1.6}
+                .icons-img {text-align: center; margin-top: 15px;
+                    img{width: 5vw; margin-left: 10px;
+                    }
+                    }
+                }
+            }
+        }
+
+    .contact{
+        flex-direction: column; padding-top: 10%; padding-left: 20px; padding-right: 20px;
+        h2{font-size: 18px; color: #75a1de;}
+        p{font-size: 12px; line-height: 1.6;}
+        img{width: 100%;}
+        .contacts-inner{text-align: center;
+            h5{font-size: 20px;}
+        }
+        form{
+            margin-bottom: 44px;
+            .first-inputs{
+                .inner-form{
+                    input{padding: 1px; width: 100%;}  
+                }
+            }
+            textarea{width: 97%;}
+            button{padding: 7px; margin-left: 75%;}
+        }
+    }
+
+    .footer{
+        .icons-img{
+            img{width: 6vw;}
+        }
+    }
+}
+
+@media (width: 414px){
+    .team{
+        .cards{
+            .card-body{
+                .copy{top: 14.4%;}
+                .copyy{top: 9.3%;}
+                .card-text{text-align: center;padding: 20px 0 20px 1px;}
+                p{font-size: 14px;line-height: 1.3;}
+                }
+            }
+        }
+        .image{left: 55%;}
+        .Standing{top: 60%;}
+}
+
+@media (width: 320px){
+    .banner{
+        .heading{
+            p{font-size: 7px;}
+        }
+        .rectangle{width: 138px; height: 198px;}
+
+    }
+    .image{left: 47%;width: 38%;top: 25%;}
+
+    .stem{
+        .stem-inner{
+            p{font-size: 7px; margin-bottom: -11px;}
+        }
+    }
+    .Standing{top: 68%;}
+
+    .team{
+        padding-top: 66%; height: 420vh;
+        .cards{
+            .card-body{
+                .copy{width: 38vw; top: 12%;}
+                p{font-size: 10px;}
+                h5{font-size: 16px;}
+                .copyy{width: 32vw; top: 8.8%;}
+                }
+            }
+        }
+
+        .contact{
+            form{font-size: 12px;
+                textarea{width: 96%;}
+                button{margin-left: 70%;}
+            }
+        }
+
+}
+
+@media (height: 812px){
+    .stem{
+        .oval{height: 22vh;}
+    }
+    .Standing{top: 52%}
+    .team{padding-top: 65%; height: 333vh;}
+}
+
+@media (width: 360px){
+    .Standing{top: 66%;}
+
+    .team{
+        padding-top: 66%; height: 409vh;
+        .cards{
+            .card-body{
+                .copy{width: 38vw; top: 12.3%;}
+                p{font-size: 12px;}
+                h5{font-size: 16px;}
+                .copyy{width: 32vw; top: 8.8%;}
+                }
+            }
+        }
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+
+    .banner{
+        padding-top: 12%;
+        .heading{margin: 90px 0 0 24px;
+            h1{font-size: 35px;}
+            p{font-size: 15px; line-height: 1.6;}
+        }
+        .rectangle{width: 353px; height: 373px;}
+    }
+    .image{top: 215px; left: 49%;}
+
+    .stem{
+        .stem-inner{
+            h2{font-size: 35px;}
+            p{font-size: 14px; line-height: 1.6;}
+        }
+        .oval{width: 17vw;}
+    }
+    .Standing{top: 59%;}
+
+    .team{
+        height: 140vh; padding-top: 24%;
+        .cards{
+            .card-body{
+                .card{width: 44vw;}
+                .copy{top: 15%;}
+                .copyy{top: 15%;}
+                p{font-size: 11px; line-height: 1.6;}
+                h5{font-size: 16px;}
+                }
+            }
+        }
+
+        .contact{
+            img{width: 100%; margin-top: 100px;}
+            form{
+                .first-inputs{
+                    .inner-form{
+                        input{padding: 2px;}
+                    }
+                }
+            }
+        }
+}
+
+@media (width: 1024px){
+    p{line-height: 1.6;}
+    .banner{
+        padding-top: 9%;
+        .heading{margin: 113px 0 0 56px;
+        }
+        .rectangle{width: 454px; height: 493px;}
+    }
+    .image{left: 525px;}
+    .Standing{top: 56%;}
+
+    .team{
+        height: 134vh; padding-top: 24%;
+        .cards{
+            .card-body{
+                .card{width: 45vw;}
+                .copy{width: 20vw; top: 8.6%;}
+                .copyy{top: 10%; width: 14vw;}
+                }
+            }
+        }
+
+        .contact{
+            img{width: 100%; margin-top: 70px;}
+            form{
+                button{margin-left: 76%;}
+                .first-inputs{
+                    .inner-form{
+                        input{padding: 2px;}
+                    }
+                }
+            }
+        }
+}
+
+// landscape
+
+@media (min-width: 568px) and (max-width: 767px){
+    p{line-height: 1.6;}
+    .banner{
+        padding-top: 9%;
+        .heading{margin: 90px 0 0 24px;
+            h1{font-size: 35px;}
+            p{font-size: 12px;}
+        }
+        .rectangle{width: 298px; height: 346px;}
+    }
+    .image{top: 215px; left: 49%;}
+
+    .stem{
+        .stem-inner{
+            h2{font-size: 35px;}
+            p{font-size: 11px;}
+        }
+        .oval{width: 17vw; height: 62vh; margin-top: 70px;}
+    }
+    .Standing{top: 145%;}
+
+    .team{
+        height: 364vh; padding-top: 24%;
+        .cards{
+            .card-body{
+                .card{width: 46vw;}
+                .copy{top: 15%;}
+                .copyy{top: 15%;}
+                p{font-size: 11px;}
+                h5{font-size: 16px;}
+                .card-text{padding: 20px 0px 20px 6px;}
+                }
+            }
+        }
+
+        .contact{
+            h2{font-size: 25px;}
+            p{font-size: 12px;}
+            form{
+                .first-inputs{
+                    .inner-form{
+                        input{padding: 2px;}
+                    }
+                }
+            }
+            img{width: 100%; margin-top: 100px;}
+        }
+}
+
+@media (width: 568px){
+    .banner{
+        .heading{
+            h1{font-size: 24px;}
+            p{font-size: 11px;}
+        }
+        .rectangle{width: 258px; height: 310px;}
+    }
+    .image{top: 180px; left: 49%;}
+    .Standing{top: 154%;}
+
+    .team{
+        height: auto; padding-top: 55%; margin-top: -35%;
+        .cards{
+            .card-body{
+                .card{width: 100vw;}
+                .copy{top: 14.7%;}
+                .copyy{top: 10%;}
+                p{font-size: 18px;}
+                h5{font-size: 20px;}
+                .card-text{padding: 20px 0px 20px 47px;}
+                }
+            }
+        }
+
+        .contact{
+            h2{font-size: 25px; text-align: center;}
+            p{font-size: 12px; text-align: center;}
+            form{padding: 15px 86px;
+                .first-inputs{
+                    .inner-form{
+                        input{padding: 2px;}
+                    }
+                }
+                textarea{width: 97%;}
+                button{margin-left: 79%;}
+            }
+            img{width: 100%; margin-top: 100px;}
+        }
+}
+
+@media (width: 736px){
+    .image{left: 53%;}
+    .Standing {
+        top: 135%;
+    }
+
+    .team{
+        height: 352vh;
+        .cards{
+            .card-body{
+                .copy{top: 14.2%; width: 16vw;}
+                p{font-size: 12px;}
+                .copyy{top: 16%;}
+                }
+            }
+        }
+}
+
+@media (width: 812px){
+    .Standing {
+        top: 162%;
+    }
+
+    .team{
+        height: 390vh;
+        .cards{
+            .card-body{
+                .copy{top: 15.4%;}
+                .copyy{top: 15.5%;}
+            }
+        }
+        }
+
+}
+
+@media (height: 768px){
+    .Standing {
+        top: 100%;
+    }
+
+    .team{
+        height: 236vh;
+        }
+
+}
+
+
+@media (width: 1366px) and (height: 1024px){
+    .Standing {
+        top: 73%;
+    }
+
+    .team{
+        height: 167vh;
+        }
+
+        .contact{
+            form{
+                textarea{width: 97%;}
+            }
+        }
+}
+
+
+@media (width: 1280px) and (height: 950px){
+    .image{left: 648px;}
+    .Standing{top: 78%;}
+
+    .team{
+        height: 193vh; padding-top: 17%; margin-top: -6%;
+        .cards{
+            .card-body{
+                .card{width: 41vw;}
+                .copy{top: 15.5%; left: 30%;}
+                .copyy{top: 15.6%;}
+                p{font-size: 18px;}
+                }
+            }
+        }
+}
